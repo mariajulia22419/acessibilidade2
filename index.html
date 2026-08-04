@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        
+        <section id="tela-inicial" class="tela ativo">
+            <h1>🎮 Jogo da Acessibilidade</h1>
+            <p>Ajude os usuários a ajustarem a interface para jogarem com conforto e acessibilidade!</p>
+            <button id="btn-iniciar" class="btn-principal">Iniciar Jogo 🚀</button>
+        </section>
+
+        <section id="tela-jogo" class="tela oculto">
+            <header class="topo-jogo">
+                <h2>Fase 1: Ajuste o Painel</h2>
+                <p class="instrucao">Ajuste a interface para desbloquear a pergunta secreta do jogo!</p>
+            </header>
+
+            <div class="painel-controles">
+                <h3>Controles de Acessibilidade</h3>
+                
+                <div class="grupo-controle">
+                    <span>Tamanho do Texto:</span>
+                    <button id="btn-aumentar">Aumentar (A+)</button>
+                    <button id="btn-diminuir">Diminuir (A-)</button>
+                </div>
+
+                <div class="grupo-controle">
+                    <span>Tema visual:</span>
+                    <button id="btn-tema">Ativar Modo Escuro 🌙</button>
+                </div>
+            </div>
+
+            <div class="objetivos">
+                <h3>Missões para Liberar o Desafio:</h3>
+                <ul>
+                    <li id="missao-fonte">❌ Alterar o tamanho da fonte</li>
+                    <li id="missao-tema">❌ Alternar para o Modo Escuro</li>
+                </ul>
+            </div>
+
+            <div id="desafio-game" class="caixa-desafio oculto">
+                <h3>❓ Pergunta do Jogo:</h3>
+                <p>Qual tecnologia ajuda pessoas cegas a lerem conteúdos em telas de computador e celular?</p>
+                
+                <div class="opcoes-jogo">
+                    <button class="btn-resposta" data-correta="false">Óculos Escuros</button>
+                    <button class="btn-resposta" data-correta="true">Leitor de Tela (Screen Reader)</button>
+                    <button class="btn-resposta" data-correta="false">Aumentar o Volume do Fone</button>
+                </div>
+            </div>
+
+            <div id="mensagem-vitoria" class="oculto">
+                🏆 Parabéns! Você aprendeu sobre acessibilidade e venceu o jogo!
+                <br><br>
+                <button id="btn-reiniciar">Jogar Novamente 🔄</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
